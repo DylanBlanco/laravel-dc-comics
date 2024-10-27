@@ -20,8 +20,10 @@ return new class extends Migration
             $table->string('series', 64);
             $table->date('sale_date')->nullable();
             $table->string('type', 32);
-            $table->text('artists')->nullable();
-            $table->text('writers')->nullable();
+            // $table->text('artists')->nullable();
+            // $table->text('writers')->nullable();
+            $table->json('artists')->nullable();
+            $table->json('writers')->nullable();
             $table->timestamps();
         });
     }
