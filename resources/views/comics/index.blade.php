@@ -10,6 +10,16 @@
                 Laravel Comics
             </h1>
         </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <a href="{{ route('comics.create') }}" class="btn btn-primary">
+                Aggiungi
+            </a>
+        </div>
+    </div>
+
     <div class="row">
         <table class="table">
             <thead>
